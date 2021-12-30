@@ -1,0 +1,151 @@
+def myfun(num):
+    print("Hello how are you")
+    num = 6
+    f = 1
+    for i in range(num,0,-1):
+        f = f*i
+    print("Factorial result is:",f)
+myfun(5)
+##########################################
+
+class Student:
+    def myfun(num):
+        f = 1
+        for i in range(num,0,-1):
+            f = f*i
+        print("Factorial result is:",f)
+    def SimpleInterest(p,r,t):
+        res = (p*r*t)/100
+        print("Simple interest is:",res)
+    x = int(input("Enter any number"))
+    a = int(input("Enter principle:"))
+    b = int(input("Enter rate:"))
+    c = int(input("Enter time:"))
+    myfun(x)
+    SimpleInterest(a, b, c)
+    
+        
+
+
+#####################################       
+        
+        
+class Student:  # class creation
+    name = "Avanish singh"  # class variable 
+    print("Class variable inside class",name)
+    def myfun(self, num):  # instance method
+        f = 1   # local variable
+        for i in range(num,0,-1):
+            f = f*i
+        print("Factorial result is:",f)
+    def SimpleInterest(self,p,r,t): # instance method
+        res = (p*r*t)/100  # local variable 
+        print("Simple interest is:",res)
+   
+obj = Student()   # object creation
+obj.myfun(6)
+obj.SimpleInterest(1000,5,4)
+print("Class variable outside class using object:",obj.name)
+print("Class variable outside class using class:",Student.name)
+
+
+
+############################################
+
+class Laptop:
+    c_name = "ASus"  # class variable 
+    def __init__(self, ssd, hardisk):
+        self.ssd = ssd   # instance variable 
+        self.hd = hardisk
+    def show(self):
+        print("SSD card in my laptop is:",self.ssd)
+        print("Hardisk in my laptop is:",self.hd)
+        print("Name of myu laptop is:",obj.c_name)
+    print("Name of my laptop is:",c_name)
+    
+obj = Laptop("3GB", "1TB")
+obj.show()
+
+
+ 
+#######################################################
+       
+class Laptop:
+    c_name = "ASus"  # class variable 
+    def __init__(self, ssd, hardisk, gpu):
+        self.ssd = ssd   # instance variable 
+        self._hd = hardisk # protected variable 
+        self.__gp = gpu  # private variable 
+    def __show(self):
+        print("SSD card in my laptop is:",self.ssd)
+        print("Hardisk in my laptop is:",self._hd)
+        print("Name of myu laptop is:",obj.c_name)
+        print("private variable inside class:",self.__gp)
+    print("Name of my laptop is:",c_name)
+    
+obj = Laptop("3GB", "1TB", "10GB")
+obj._Laptop__show()
+print("private variable inside class:",obj._Laptop__gp)
+print("protected variable outside class:",obj.c_name)
+print("public variable outside class:",obj.ssd)
+        
+    
+
+   
+ ####################################################   
+    
+class OldCar:
+    def Features(self, name, model, engine):
+        print("Name of my car is:",name)
+        print("Model number is:",model)
+        print("Engine is:",engine )
+    
+class NewCar:
+    def newFeature(self, sheets, skyview):
+        print("number of sheets are:",sheets)
+        print("Age of new car is:",skyview)
+
+obj1 = OldCar()
+obj2 = NewCar()
+obj2.newFeature(2,"Yes")
+obj1.Features("merchedies", "v5", "7253G")
+
+
+##########################################
+
+
+
+    
+
+class OldCar:
+    def Features(self, name, model, engine):
+        print("Name of my car is:",name)
+        print("Model number is:",model)
+        print("Engine is:",engine )
+    
+class NewCar(OldCar):   # inheritance 
+    def newFeature(self, sheets, skyview):
+        print("number of sheets are:",sheets)
+        print("Age of new car is:",skyview)
+
+obj = NewCar()
+obj.newFeature(2,"Yes")
+obj.Features("merchedies", "v5", "7253G")
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+
